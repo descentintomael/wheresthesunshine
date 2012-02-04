@@ -1,0 +1,42 @@
+%html
+  %head
+    %title Sunshine Test
+    = stylesheet_link_tag 'sun'
+    %script{:type=>"text/javascript", :src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+  %body
+    .background-fade
+      \
+    .sunshine
+      \ 
+    .main-content
+      %h1.lead-in Find your Sunshine
+      %h2.location-question Tell me where you're at
+      .search-container
+        .search-input
+          %input{:placeholder => "Sunnyvale, CA"}
+        .search-button
+          %span
+            Go!
+      .results
+        %h2
+          The sun's out 4 miles away in 
+          %span.found-city
+            Sunnyvale
+        %p.try-again
+          %a{:href => '#'}
+            Find something else...
+    .non-shadow-hills
+      .hill
+    .shadow-hills
+    .footer
+      %a{:href => '#'}
+        About
+      |
+      %a{:href => '#'}
+        Contact
+      |
+      %a{:href => '#'}
+        Github
+      |
+      %a{:href => '#'}
+        FAQ
