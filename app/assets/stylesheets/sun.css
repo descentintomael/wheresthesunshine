@@ -51,6 +51,9 @@ h2.location-question {
   margin-bottom: 0; }
 
 /* line 56, ../sass/sun.sass */
+.results {
+  display:none;
+}
 .results h2 {
   font-size: 3em;
   color: rgba(34, 34, 34, 0.9);
