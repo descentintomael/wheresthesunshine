@@ -2,7 +2,7 @@
 /* line 10, ../sass/sun.sass */
 body {
   background-color: #78c4ce;
-  background-image: url("../img/blue_noise.jpeg"); }
+  background-image: url("blue_noise.jpeg"); }
 
 /* line 14, ../sass/sun.sass */
 .sunshine {
@@ -133,7 +133,7 @@ h2.location-question {
 .non-shadow-hills .hill {
   z-index: 10;
   background-color: #8ba341;
-  background-image: url("../img/green_noise.jpeg");
+  background-image: url("green_noise.jpeg");
   position: fixed;
   bottom: 0;
   left: -50px;
