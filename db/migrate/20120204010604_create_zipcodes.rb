@@ -6,7 +6,7 @@ class CreateZipcodes < ActiveRecord::Migration
       t.float :lng
       t.string :city
       t.string :state
-
+      
       t.timestamps
     end
   end
