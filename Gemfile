@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'http://gems.github.com'
 
 gem 'rails', '3.2.1'
 
@@ -24,6 +25,8 @@ end
 gem 'jquery-rails'
 gem "haml-rails"
 gem "compass"
+gem 'nokogiri'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -38,3 +41,7 @@ gem "compass"
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+group :test, :development do
+  gem "rspec-rails"
+  gem "webrat"
+end
