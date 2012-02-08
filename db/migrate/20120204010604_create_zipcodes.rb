@@ -1,6 +1,6 @@
 class CreateZipcodes < ActiveRecord::Migration
   def change
-    create_table :zipcodes do |t|
+    create_table(:zipcodes, :options => 'ENGINE=MyISAM') do |t|
       t.string :zipcode
       t.float :lat
       t.float :lng
