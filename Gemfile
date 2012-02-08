@@ -28,6 +28,7 @@ gem "compass"
 gem 'nokogiri'
 gem 'mysql2'
 gem 'GeoRuby'
+gem 'geokit'
 gem 'spatial_adapter', :git => 'git://github.com/descentintomael/spatial_adapter.git'
 
 # To use ActiveModel has_secure_password
