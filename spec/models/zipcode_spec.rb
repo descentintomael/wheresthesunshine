@@ -36,6 +36,12 @@ describe Zipcode do
       short_zipcode = Zipcode.new(@attr.merge(:zipcode=>"1234"))
       short_zipcode.should_not be_valid
     end
+    
+    it "shouldn't allow duplicate zipcodes" do
+      existing_zipcode = Zipcode.first
+      dupe_zipcode = Zipcode.new(@attr.merge(:zipcode=>existing_zipcode[:zipcode]))
+      dupe_zipcode.should_not be_valid
+    end
   end
   
   describe "state validations" do
