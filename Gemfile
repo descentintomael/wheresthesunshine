@@ -26,6 +26,9 @@ gem 'jquery-rails'
 gem "haml-rails"
 gem "compass"
 gem 'nokogiri'
+gem 'mysql2'
+gem 'GeoRuby'
+gem 'spatial_adapter', :git => 'git://github.com/descentintomael/spatial_adapter.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

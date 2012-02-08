@@ -1,7 +1,16 @@
+GIT
+  remote: git://github.com/descentintomael/spatial_adapter.git
+  revision: f36d20623cef4dd3fd19c8bea25cc92fda6c4b53
+  specs:
+    spatial_adapter (1.3.1)
+      GeoRuby (>= 1.3.0)
+      activerecord (>= 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   remote: http://gems.github.com/
   specs:
+    GeoRuby (1.3.4)
     actionmailer (3.2.1)
       actionpack (= 3.2.1)
       mail (~> 2.4.0)
@@ -67,6 +76,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    mysql2 (0.3.11)
     nokogiri (1.5.0)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -107,7 +117,7 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.8.0)
-    sass (3.1.13)
+    sass (3.1.14)
     sass-rails (3.2.4)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -135,14 +145,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  GeoRuby
   coffee-rails (~> 3.2.1)
   compass
   haml-rails
   jquery-rails
+  mysql2
   nokogiri
   rails (= 3.2.1)
   rspec-rails
   sass-rails
+  spatial_adapter!
   sprockets
   sqlite3
   uglifier (>= 1.0.3)
