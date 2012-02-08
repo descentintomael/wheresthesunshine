@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205150214) do
+ActiveRecord::Schema.define(:version => 20120207230330) do
 
   create_table "weather_conditions", :force => true do |t|
     t.string   "condition"
@@ -24,16 +24,19 @@ ActiveRecord::Schema.define(:version => 20120205150214) do
 
   add_index "weather_conditions", ["zipcode_id"], :name => "index_weather_conditions_on_zipcode_id"
 
-  create_table "zipcodes", :force => true do |t|
+  create_table "zipcodes", :options=>'ENGINE=MyISAM', :force => true do |t|
     t.string   "zipcode"
     t.float    "lat"
     t.float    "lng"
     t.string   "city"
     t.string   "state"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
     t.integer  "population"
     t.string   "weather_station"
+    t.point    "zipcode_point",   :limit => nil, :null => false
   end
+
+  add_index "zipcodes", ["zipcode_point"], :name => "index_zipcodes_on_zipcode_point", :spatial => true
 
 end
