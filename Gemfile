@@ -30,6 +30,9 @@ gem 'mysql2'
 gem 'GeoRuby'
 gem 'geokit'
 gem 'spatial_adapter', :git => 'git://github.com/descentintomael/spatial_adapter.git'
+gem 'execjs'
+gem 'therubyracer'
+gem 'placefinder', :git => 'git://github.com/abuiles/placefinder.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
