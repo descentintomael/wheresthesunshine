@@ -1,0 +1,30 @@
+# Note: password generated here http://preshing.com/20110811/xkcd-password-generator
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: wheresthesunshine_dev
+  pool: 5
+  username: 
+  password: 
+  socket: 
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: wheresthesunshine_test
+  pool: 5
+  username: 
+  password: 
+  socket:
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: wheresthesunshine
+  pool: 5
+  username: 
+  password: 
+  socket:
