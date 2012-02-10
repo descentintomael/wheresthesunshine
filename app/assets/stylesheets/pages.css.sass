@@ -9,7 +9,7 @@
 
 body
   :background-color #78c4ce
-  :background-image url("../img/blue_noise.jpeg")
+  :background-image url("/assets/blue_noise.jpeg")
 
 .sunshine
   z-index: 10
@@ -126,6 +126,32 @@ h2.location-question
     :font italic normal 600 1.2em 'Crimson Text', serif
     :color rgba(34,34,34,.9)
   
+// About box
+
+.about-box
+  :background-color #222
+  :height 400px
+  :width 600px
+  :z-index 100
+  :display none  // Avoid showing this at first
+  :position fixed  // NOTE: I should put this centering stuff in a function/mixin
+  :top 50% 
+  :left 50% 
+  :margin-left -300px 
+  :margin-top -200px
+  :padding 10px
+  :border 4px solid #fff
+  :outline 8px solid #222
+  :box-shadow 10px 10px 15px 6px #666
+  :color #fff
+  h2
+    :font-family 'Diplomata'
+    :font-style normal
+    :font-weight 400
+    :font-size 14pt
+    :text-align center
+  .about-content
+    :font italic normal 600 1.2em 'Crimson Text', serif
 
 // Background elements
 
@@ -133,7 +159,7 @@ h2.location-question
   .hill
     :z-index 10
     :background-color #8ba341
-    :background-image url("../img/green_noise.jpeg")
+    :background-image url("/assets/green_noise.jpeg")
     :position fixed
     :bottom 0
     :left -50px
