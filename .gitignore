@@ -13,5 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+# Ignore the database configuration so no sensitive data gets pushed into the public domain
 config/database.yml
+# Ignore the compiled stylesheet
 public/stylesheets/pages.css.css
