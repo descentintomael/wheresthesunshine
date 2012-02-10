@@ -1,9 +1,9 @@
 GIT
-  remote: git://github.com/abuiles/placefinder.git
-  revision: 19e2ee4a045e1591100f8cd066e00ee779c9fc61
+  remote: git://github.com/Compass/compass-rails.git
+  revision: 7ec597b34aba12f54c881eb800b5deb209baca71
   specs:
-    placefinder (0.2.2)
-      httparty (>= 0.7.3)
+    compass-rails (1.0.0.rc.2)
+      compass (~> 0.12.rc.0)
 
 GIT
   remote: git://github.com/descentintomael/spatial_adapter.git
@@ -55,7 +55,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
-    compass (0.11.7)
+    compass (0.12.rc.1)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
@@ -73,9 +73,6 @@ GEM
       haml (~> 3.0)
       railties (~> 3.0)
     hike (1.2.1)
-    httparty (0.8.1)
-      multi_json
-      multi_xml
     i18n (0.6.0)
     journey (1.0.1)
     jquery-rails (2.0.0)
@@ -89,7 +86,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
-    multi_xml (0.4.1)
     mysql2 (0.3.11)
     nokogiri (1.5.0)
     polyglot (0.3.3)
@@ -161,16 +157,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  GeoRuby
   coffee-rails (~> 3.2.1)
-  compass
+  compass (~> 0.12.rc.0)
+  compass-rails!
   execjs
   geokit
   haml-rails
   jquery-rails
   mysql2
   nokogiri
-  placefinder!
   rails (= 3.2.1)
   rspec-rails
   sass-rails

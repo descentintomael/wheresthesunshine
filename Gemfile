@@ -20,19 +20,18 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+  gem "compass", '~> 0.12.rc.0'
+  gem 'compass-rails', :git => 'git://github.com/Compass/compass-rails.git'
+  gem 'execjs'
+  gem 'therubyracer'
 end
 
 gem 'jquery-rails'
 gem "haml-rails"
-gem "compass"
 gem 'nokogiri'
 gem 'mysql2'
-gem 'GeoRuby'
 gem 'geokit'
 gem 'spatial_adapter', :git => 'git://github.com/descentintomael/spatial_adapter.git'
-gem 'execjs'
-gem 'therubyracer'
-gem 'placefinder', :git => 'git://github.com/abuiles/placefinder.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
