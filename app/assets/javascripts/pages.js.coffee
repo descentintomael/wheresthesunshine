@@ -66,7 +66,7 @@ jQuery ->
   ###
     Footer link setup
   ###
-  jQuery('a#about-link').click (e) ->
+  jQuery('a#about-link,#close-about-box').click (e) ->
     e.preventDefault()
-    jQuery('.about-box').show()
-    jQuery('.main-content').hide()
+    jQuery('.about-box').toggle()
+    jQuery('.main-content').toggle()
