@@ -1,0 +1,155 @@
+// needs latest Compass, add '@import "compass"' to your scss
+@import compass
+@import url(http://fonts.googleapis.com/css?family=Diplomata|Crimson+Text:600italic)
+
+@mixin rounded-corners($radius)
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  border-radius: $radius
+
+body
+  :background-color #78c4ce
+  :background-image url("../img/blue_noise.jpeg")
+
+.sunshine
+  z-index: 10
+  width: 375px
+  height: 375px
+  margin-left: auto
+  margin-right: auto
+  position: absolute
+  top: 0px
+  left: 150px
+  @include background-image(radial-gradient(center, ellipse cover, rgba(247,239,136,1) 0%,rgba(252,242,47,0.85) 31%,rgba(249,235,65,0.8) 42%,rgba(247,230,79,0.52) 51%,rgba(247,230,79,0) 68%))
+
+.main-content
+  :z-index 100
+  :width 1500px
+  :height 400px
+  :display block
+  :position fixed 
+  :top 50% 
+  :left 50% 
+  :margin-left -750px 
+  :margin-top -200px 
+  
+// Heading stuff
+
+h1.lead-in
+  :font-family 'Diplomata'
+  :font-style normal
+  :font-weight 400
+  :font-size 4em
+  :color rgba(34,34,34,.9)
+  :text-align center
+  :margin-bottom 0
+  
+h2.location-question
+  :font italic normal 600 2em 'Crimson Text', serif
+  :color rgba(34,34,34,.9)
+  :text-align center
+  :margin-bottom 0
+  
+// Report the findings
+
+.results
+  :display none
+  h2
+    :font-size 3em
+    :color rgba(34,34,34,.9)
+    :font italic normal 600 3em/normal 'Crimson Text', serif
+    :text-align center
+    :margin-bottom 0
+    .found-city
+      :text-decoration underline
+      :cursor pointer
+
+  p.try-again
+    :text-align center
+    :margin-left auto
+    :margin-right auto
+    :margin-top 0
+    a
+      :font italic normal 600 1.2em 'Crimson Text', serif
+      :color rgba(34,34,34,.9)
+
+// Input styling
+
+.search-container
+  :display block
+  :width 500px
+  :margin-left auto
+  :margin-right auto
+
+  .search-input
+    :height 50px
+    :width 350px
+    :background #fff
+    :border 2px solid #222
+    :outline 5px solid #fff
+    :float left
+    :margin 10px
+    input
+      :font italic normal 600 2em 'Crimson Text', serif
+      :color #222
+      :border 0px
+      :width 300px
+      :margin-left 25px
+
+  .search-button
+    :background #222
+    :border 2px solid #fff
+    :outline 5px solid #222
+    :font italic normal 600 2em 'Crimson Text', serif
+    :color #fff
+    :width 87px
+    :height 50px
+    :float right
+    :margin 10px
+    :text-align center
+    :cursor pointer
+    span
+      :vertical-align middle
+      :display inline
+
+// Footer
+
+.footer
+  :position fixed
+  :bottom 10px
+  :left 50% 
+  :margin-left -200px
+  :width 400px
+  :text-align center
+  :z-index 100
+  a
+    :font italic normal 600 1.2em 'Crimson Text', serif
+    :color rgba(34,34,34,.9)
+  
+
+// Background elements
+
+.non-shadow-hills
+  .hill
+    :z-index 10
+    :background-color #8ba341
+    :background-image url("../img/green_noise.jpeg")
+    :position fixed
+    :bottom 0
+    :left -50px
+    :width 300px
+    :height 100px
+    :border-top-right-radius 150px 100px
+    :border-top-left-radius 150px 100px
+.shadow-hills
+  .hill
+    :z-index 0
+    :background-color #8ba341
+    :box-shadow 0px 3px 6px 6px #666
+    :width 300px
+    :height 100px
+    :border-top-right-radius 150px 100px
+    :border-top-left-radius 150px 100px
+    :position fixed
+    :bottom 0
+    :left -50px
