@@ -8,7 +8,6 @@ File.open("db/seeds/zipcode_seeds.csv", "r") do |zipcodes|
     Zipcode.create!(:zipcode => zipcode,
                     :lat => lat,
                     :lng => lng,
-                    :zipcode_point => Point.from_x_y(lat.to_f,lng.to_f),
                     :city => city,
                     :state => state,
                     :population => population,
