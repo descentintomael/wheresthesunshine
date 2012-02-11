@@ -32,21 +32,10 @@ gem 'nokogiri'
 gem 'mysql2'
 gem 'geokit'
 gem 'spatial_adapter', :git => 'git://github.com/descentintomael/spatial_adapter.git'
+gem 'shoulda', :git=>'git://github.com/3den/shoulda.git'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 group :test, :development do
   gem "rspec-rails"
   gem "webrat"
